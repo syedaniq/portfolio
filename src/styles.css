@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    height: 500px;
+    background-color: #181818;
+    border: solid black 1px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hero {
+    height: 100vh;
+    color: white;
+    font-size: 25px;
+}
+
+footer {
+    height: 50px;
+    background-color: black;
+}
+
+nav {
+    align-items: end;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 0;
+    color: #0078D4;
+    list-style: none;
+    text-align: right;
+    margin-right: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav li {
+    font-size: 20px;
+    margin-top: 5px;
+    justify-content: space-around;
+    font-weight: 600;
+}
+
+nav li::before {
+    content: "/";
+}
+
+li {
+    width: 200px;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 90px;
+    margin: 0;
+    font-weight: 500;
+}
+
+.name {
+    color: #0078D4;
+    font-weight: 700;
+}
+
+p {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.hero-area {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text {
+    margin-left: 80px;
+    margin-bottom: 200px;
+}
+
+.button {
+    width: 200px;
+    height: 55px;
+    background-color: #0078D4;
+    border-radius: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.button:hover {
+    background-color: #1280D4;
+}
+
+.button:active {
+    background-color: #1280D4;
+}
+
+.socials {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.socials svg {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin: 0 4px;
+}
