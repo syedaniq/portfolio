@@ -31,12 +31,14 @@ nav {
     list-style: none;
     text-align: right;
     margin-right: 50px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 nav li {
-    font-size: 22px;
+    font-size: 20px;
     margin-top: 5px;
     justify-content: space-around;
+    font-weight: 600;
 }
 
 nav li::before {
