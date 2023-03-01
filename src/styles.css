@@ -4,10 +4,9 @@ body {
 }
 
 section {
-    height: 500px;
     background-color: #181818;
-    border: solid black 1px;
     font-family: 'Montserrat', sans-serif;
+    padding: 20px;
 }
 
 .hero {
@@ -56,6 +55,12 @@ h1 {
     font-weight: 500;
 }
 
+
+h2 {
+    color: #0078D4;
+    font-size: 50px;
+}
+
 .name {
     color: #0078D4;
     font-weight: 700;
@@ -65,6 +70,7 @@ p {
     margin: 0;
     font-size: 30px;
     font-weight: 300;
+    color: white;
 }
 
 .hero-area {
@@ -92,11 +98,11 @@ p {
 }
 
 .button:hover {
-    background-color: #1280D4;
+    background-color: deepskyblue;
 }
 
 .button:active {
-    background-color: #1280D4;
+    background-color: deepskyblue;
 }
 
 .socials {
@@ -112,4 +118,25 @@ p {
     width: 25px;
     height: 25px;
     margin: 0 4px;
+}
+
+.socials svg:hover {
+    fill: deepskyblue;
+}
+
+.sub-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 100px;
+}
+
+.headshot-container {
+    display: flex;
+    align-items: center;
+}
+
+.headshot {
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.5);
 }
