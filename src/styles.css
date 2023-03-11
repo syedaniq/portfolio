@@ -68,7 +68,7 @@ h2 {
 
 p {
     margin: 0;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 300;
     color: white;
 }
@@ -82,19 +82,24 @@ p {
 
 .hero-text {
     margin-left: 80px;
-    margin-bottom: 200px;
+}
+
+.text-block {
+    top: 50%;
+    width: 50%;
+    height: 40%;
 }
 
 .button {
-    width: 200px;
-    height: 55px;
-    background-color: #0078D4;
-    border-radius: 25px;
+    margin-top: 25px;
+    width: 120px;
+    height: 60px;
+    border: 2px solid #0078D4;
+    border-radius: 10px;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 25px;
 }
 
 .button:hover {
@@ -127,7 +132,6 @@ p {
 .sub-section {
     display: flex;
     justify-content: space-around;
-    padding: 100px;
 }
 
 .headshot-container {
