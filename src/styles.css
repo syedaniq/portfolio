@@ -80,10 +80,19 @@ h2::after {
 }
 
 p {
-    margin: 0;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 300;
     color: white;
+}
+
+a {
+    color: #0078D4;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+a:hover {
+    color: deepskyblue
 }
 
 .hero-area {
@@ -152,14 +161,36 @@ p {
     justify-content: space-around;
 }
 
+.technologien {
+    list-style: none;
+    padding: 0;
+}
+
+.technologien li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    background-image: url('images/arrow.svg');
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+    background-position: left center;
+    padding-left: 10px;
+}
+
+.technologien li span {
+    margin-left: 10px;
+    color: white;
+}
+
 .headshot-container {
     margin-right: 600px;
+    margin-top: 100px;
     display: flex;
-    align-items: end;
+    align-items: center;
 }
 
 .headshot {
-    width: 280px;
+    width: 260px;
     border-radius: 10px;
     box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.5);
 }
