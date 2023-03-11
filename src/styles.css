@@ -103,11 +103,11 @@ p {
 }
 
 .button:hover {
-    background-color: deepskyblue;
+    background-color: #0078D4;
 }
 
 .button:active {
-    background-color: deepskyblue;
+    background-color: #0078D4;
 }
 
 .socials {
