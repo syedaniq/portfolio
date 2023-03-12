@@ -67,11 +67,11 @@ h2::after {
     position: absolute;
     overflow: hidden;
     margin-left: 15px;
-    margin-top: 40px;
+    margin-top: 38px;
     width: 15%;
-    height: 1px;
+    height: 2px;
     content: '\a0';
-    background-color: rgba(0, 120, 212, 0.25);
+    background-color: rgba(0, 120, 212, 0.35);
 }
 
 .name {
@@ -161,25 +161,25 @@ a:hover {
     justify-content: space-around;
 }
 
-.technologien {
-    list-style: none;
-    padding: 0;
-}
-
-.technologien li {
+.technologien-container {
     display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    background-image: url('images/arrow.svg');
-    background-repeat: no-repeat;
-    background-size: 10px 10px;
-    background-position: left center;
-    padding-left: 10px;
 }
 
-.technologien li span {
-    margin-left: 10px;
+.technologien-left {
+    flex: 1;
+    margin-left: 10%;
     color: white;
+}
+
+.technologien-right {
+    flex: 1;
+    color: white;
+}
+
+.technologien {
+    list-style-image: url('images/arrow.svg');
+    list-style-position: outside;
+    padding: 0;
 }
 
 .headshot-container {
