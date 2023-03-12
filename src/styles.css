@@ -163,22 +163,22 @@ a:hover {
 
 .technologien-container {
     display: flex;
+    margin-left: 2%;
 }
 
 .technologien-left {
     flex: 1;
-    margin-left: 10%;
     color: white;
 }
 
 .technologien-right {
     flex: 1;
     color: white;
+    margin-left: -55%;
 }
 
 .technologien {
     list-style-image: url('images/arrow.svg');
-    list-style-position: outside;
     padding: 0;
 }
 
