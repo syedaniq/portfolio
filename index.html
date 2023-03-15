@@ -56,13 +56,18 @@
                         technologies and it security.
                     </p2>
                 </div>
-                <div class="button">contact</div>
+
+                <a href="mailto:mail@syedaniq.de">
+                    <div class="button">
+                        contact
+                    </div>
+                </a>
             </div>
         </div>
     </section>
 
     <section class="sub-section">
-        <div class="information">
+        <div>
             <h2>/ about me</h2>
             <div class="sub-text">
                 <p>
@@ -106,7 +111,57 @@
         </div>
     </section>
 
-    <section class="sub-section"></section>
+    <section class="sub-section">
+        <div class="information">
+            <h2>/ experience</h2>
+            <div class="container">
+                <ul class="stationen">
+                    <li data-description="adesso" class="active">adesso mobile</li>
+                    <li data-description="hda">Hochschule Darmstadt</li>
+                </ul>
+                <div class="content">
+                    <div data-description="adesso" class="description active">
+                        <h3>Werkstudent Android Developer</h3>
+                        <p>Seit April 2023</p>
+                        <ul>
+                            <li>Entwicklung mobiler Anwendungen im Automotive Sektor</li>
+                            <li>Entwicklungsumgebung: Android-Studio, Programmiersprache: Kotlin</li>
+                        </ul>
+                    </div>
+                    <div data-description="hda" class="description">
+                        <h3>Tutor Programmieren 1</h3>
+                        <p>Oktober 2022 - Februar 2023</p>
+                        <ul>
+                            <li>Praktikumsabnahmen zum Erhalt der Prüfungsvorleistung</li>
+                            <li>Beantworten von Fragen der Studierende</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const stations = document.querySelectorAll('.stationen li');
+            const descriptions = document.querySelectorAll('.description');
+
+            function activateDescription(description) {
+                descriptions.forEach(desc => desc.classList.remove('active'));
+                description.classList.add('active');
+            }
+
+            stations.forEach(station => {
+                const descriptionId = station.dataset.description;
+                const description = document.querySelector(`.description[data-description="${descriptionId}"]`);
+
+                station.addEventListener('click', function () {
+                    stations.forEach(s => s.classList.remove('active'));
+                    this.classList.add('active');
+                    activateDescription(description);
+                });
+            });
+        </script>
+
+    </section>
 
     <footer></footer>
 
