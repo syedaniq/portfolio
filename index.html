@@ -113,55 +113,52 @@
 
     <section class="sub-section">
         <div class="information">
-
             <h2>/ experience</h2>
             <div class="container">
-                <ul class="years">
-                    <li class="active">2023</li>
-                    <li>2022</li>
+                <ul class="stationen">
+                    <li data-description="adesso" class="active">adesso mobile</li>
+                    <li data-description="hda">Hochschule Darmstadt</li>
                 </ul>
                 <div class="content">
-                    <div class="description" data-year="2023">
-                        <h3>android developer</h3>
+                    <div data-description="adesso" class="description active">
+                        <h3>Werkstudent Android Development</h3>
                         <ul>
                             <li>bullet point 1</li>
                             <li>bullet point 2</li>
-                            <li>bullet point 3</li>
                         </ul>
                     </div>
-                    <div class="description" data-year="2022">
+                    <div data-description="hda" class="description">
+                        <h3>Tutor Programmieren 1</h3>
+                        <p>WS22</p>
                         <ul>
-                            <li>weitere bullet points zu 2023</li>
+                            <li>Praktikumsabnahmen zum Erhalt der Prüfungsvorleistung</li>
+                            <li>Beantworten von Fragen der Studierende</li>
                         </ul>
                     </div>
-                    <ul>
-                        <li>weitere bullet points zu 2022</li>
-                    </ul>
                 </div>
             </div>
         </div>
-        </div>
-        <script>
-            var years = document.querySelectorAll('.years li');
-            var descriptions = document.querySelectorAll('.description');
 
-            years.forEach(function (year) {
-                year.addEventListener('click', function () {
-                    years.forEach(function (year) {
-                        year.classList.remove('active');
-                    });
-                    descriptions.forEach(function (desc) {
-                        desc.classList.remove('active');
-                    });
+        <script>
+            const stations = document.querySelectorAll('.stationen li');
+            const descriptions = document.querySelectorAll('.description');
+
+            function activateDescription(description) {
+                descriptions.forEach(desc => desc.classList.remove('active'));
+                description.classList.add('active');
+            }
+
+            stations.forEach(station => {
+                const descriptionId = station.dataset.description;
+                const description = document.querySelector(`.description[data-description="${descriptionId}"]`);
+
+                station.addEventListener('click', function () {
+                    stations.forEach(s => s.classList.remove('active'));
                     this.classList.add('active');
-                    var yearValue = this.innerText;
-                    var description = document.querySelector('.description[data-year="' + yearValue + '"]');
-                    description.classList.add('active');
+                    activateDescription(description);
                 });
             });
         </script>
-
-
 
     </section>
 

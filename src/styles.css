@@ -199,7 +199,13 @@ a:hover {
     display: flex;
 }
 
-.years {
+.container .content {
+    width: 600px; /* oder eine andere feste Breite */
+    margin: 0 auto;
+  }
+  
+
+.stationen {
     position: sticky;
     top: 0;
     list-style: none;
@@ -208,7 +214,7 @@ a:hover {
     width: 100px;
 }
 
-.years li {
+.stationen li {
     padding: 10px;
     cursor: pointer;
 }
@@ -220,6 +226,7 @@ a:hover {
     align-items: flex-start;
     width: 70%;
     padding-left: 20px;
+    margin-top: -2%;
 }
 
 .description {
@@ -228,26 +235,34 @@ a:hover {
 
 .description.active {
     display: block;
+    margin-left: 150px;
 }
 
 .information {
-    margin-left: -1350px;
+    margin-left: -950px;
 }
 
-.years li {
+.stationen li {
     position: relative;
     padding-left: 20px;
 }
 
-.years li:before {
+.stationen li:before {
     content: "";
     position: absolute;
     top: 0;
     bottom: 0;
-    right: 150px;
+    right: 0px;
     width: 1px;
+    background-color: black;
 }
 
-.years li.active:before {
+.stationen li.active:before {
+    width: 2px;
     background-color: #0078D4;
 }
+
+.description h3 {
+    white-space: nowrap;
+  }
+  
