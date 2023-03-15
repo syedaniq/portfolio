@@ -200,10 +200,9 @@ a:hover {
 }
 
 .container .content {
-    width: 600px; /* oder eine andere feste Breite */
+    width: 600px;
     margin: 0 auto;
-  }
-  
+}
 
 .stationen {
     position: sticky;
@@ -226,7 +225,7 @@ a:hover {
     align-items: flex-start;
     width: 70%;
     padding-left: 20px;
-    margin-top: -2%;
+    margin-top: -10%;
 }
 
 .description {
@@ -262,7 +261,27 @@ a:hover {
     background-color: #0078D4;
 }
 
+.stationen li.active,
+.stationen li.active a {
+    color: #0078D4;
+}
+
 .description h3 {
     white-space: nowrap;
-  }
-  
+    margin-top: 8px;
+    font-size: 150%;
+}
+
+.description li {
+    width: max-content;
+}
+
+.description p {
+    margin-top: -10px;
+    font-size: medium;
+}
+
+.description ul {
+    list-style-image: url('images/arrow.svg');
+    padding-left: 20px;
+}
