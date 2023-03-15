@@ -57,7 +57,6 @@ h1 {
     font-weight: 500;
 }
 
-
 h2 {
     color: #0078D4;
     font-size: 50px;
@@ -194,4 +193,61 @@ a:hover {
     width: 260px;
     border-radius: 10px;
     box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    display: flex;
+}
+
+.years {
+    position: sticky;
+    top: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100px;
+}
+
+.years li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 70%;
+    padding-left: 20px;
+}
+
+.description {
+    display: none;
+}
+
+.description.active {
+    display: block;
+}
+
+.information {
+    margin-left: -1350px;
+}
+
+.years li {
+    position: relative;
+    padding-left: 20px;
+}
+
+.years li:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 150px;
+    width: 1px;
+}
+
+.years li.active:before {
+    background-color: #0078D4;
 }
