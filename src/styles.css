@@ -230,6 +230,7 @@ a:hover {
 
 .description {
     display: none;
+    color: white;
 }
 
 .description.active {
@@ -244,6 +245,7 @@ a:hover {
 .stationen li {
     position: relative;
     padding-left: 20px;
+    color: white;
 }
 
 .stationen li:before {
@@ -253,7 +255,7 @@ a:hover {
     bottom: 0;
     right: 0px;
     width: 1px;
-    background-color: black;
+    background-color: white;
 }
 
 .stationen li.active:before {
@@ -284,4 +286,20 @@ a:hover {
 .description ul {
     list-style-image: url('images/arrow.svg');
     padding-left: 20px;
+}
+
+footer {
+    margin-top: 100px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer p {
+    margin-top: -5px;
+    font-size: smaller;
 }
